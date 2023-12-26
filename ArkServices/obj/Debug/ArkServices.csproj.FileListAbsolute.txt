@@ -1,0 +1,8 @@
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\bin\Debug\ArkServices.exe.config
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\bin\Debug\ArkServices.exe
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\bin\Debug\ArkServices.pdb
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.csproj.AssemblyReference.cache
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.csproj.SuggestedBindingRedirects.cache
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.csproj.CoreCompileInputs.cache
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.exe
+c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.pdb

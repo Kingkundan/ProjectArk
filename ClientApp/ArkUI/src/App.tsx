@@ -1,29 +1,9 @@
 import React from 'react';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import {Provider} from 'react-redux'
-import { configureStore, createSlice } from '@reduxjs/toolkit';
-
-// Redux Toolkit Setup
-const counterSlice = createSlice({
-  name: 'counter',
-  initialState: { value: 0 },
-  reducers: {
-    increment: state => {
-      state.value += 1;
-    },
-    decrement: state => {
-      state.value -= 1;
-    },
-  },
-});
-
-const store = configureStore({
-  reducer: {
-    counter: counterSlice.reducer,
-  },
-});
-
-export const { increment, decrement } = counterSlice.actions;
+import { Provider } from 'react-redux'
+import { useSelector } from 'react-redux';
+import { store, increment, decrement, SelectCounter } from './store';
+import { useDispatch } from 'react-redux';
 
 // React Query Setup
 const queryClient = new QueryClient();
@@ -39,20 +19,32 @@ const App: React.FC = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
-        <div className={`App ${theme}`}>
-          <h1>Redux Toolkit and React Query App</h1>
-          <div>
-            <button onClick={() => store.dispatch(increment())}>Increment</button>
-            <span>{store.getState().counter.value}</span>
-            <button onClick={() => store.dispatch(decrement())}>Decrement</button>
-          </div>
-          <div>
-            <button onClick={toggleTheme}>Toggle Theme</button>
-          </div>
-        </div>
+        <MainPanel theme={theme} Toggle={toggleTheme} />
       </Provider>
     </QueryClientProvider>
   );
 };
 
 export default App;
+
+type GT = {theme:string,Toggle: () => void};
+
+const MainPanel = ({theme,Toggle}:GT) => {
+  const CounterValue:any = useSelector(SelectCounter);
+  const dispatch = useDispatch(); 
+
+  return (
+    <div className={`App ${theme}`}>
+      <h1>Redux Toolkit and React Query App</h1>
+      <div>
+        <button onClick={() => dispatch(increment())}>Increment</button>
+        <span>{CounterValue}</span>
+        <button onClick={() => dispatch(decrement())}>Decrement</button>
+      </div>
+      <div>
+        <button onClick={Toggle}>Toggle Theme</button>
+      </div>
+    </div>
+  );
+}
+

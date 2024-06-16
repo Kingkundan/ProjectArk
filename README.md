@@ -1,2 +1,2 @@
 # ProjectArk
-Advanced web application that manages users daily needs 
+Advanced large scale web application that manages users daily needs 

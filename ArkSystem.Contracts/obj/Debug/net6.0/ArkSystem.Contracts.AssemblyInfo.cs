@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArkSystem.Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92532dba9a345b6fdafe70bbb9d1de37a9c44aee")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95e72dac5c3d52c85955b368335e91c483250b0a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArkSystem.Contracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArkSystem.Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,7 +13,7 @@ export interface AuthState {
 const initialState: AuthState = {
   user: null,
   accessToken: localStorage.getItem('accessToken'),
-  isAuthenticated: false,
+  isAuthenticated: !!localStorage.getItem('accessToken'),
   loading: false,
   error: null,
 };

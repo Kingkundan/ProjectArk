@@ -1,52 +1,61 @@
-﻿namespace ArkConsole
+﻿using ArkConsole.Data;
+using ArkConsole.Models;
+
+namespace ArkConsole
 {
-    public class Car // public class
-    {
-        public string model; // public field
-        private int speed; // private field
-        protected int year; // protected field
-        internal string color; // internal field
-        protected internal int price; // protected internal field
-        private protected int mileage; // private protected field
-
-        public void Drive() // public method
-        {
-            Console.WriteLine("Driving");
-        }
-
-        private void Accelerate() // private method
-        {
-            Console.WriteLine("Accelerating");
-        }
-
-        protected void Brake() // protected method
-        {
-            Console.WriteLine("Braking");
-        }
-
-        internal void Paint() // internal method
-        {
-            Console.WriteLine("Painting");
-        }
-
-        protected internal void Sell() // protected internal method
-        {
-            Console.WriteLine("Selling");
-        }
-
-        private protected void Repair() // private protected method
-        {
-            Console.WriteLine("Repairing");
-        }
-    }
-
     internal class Program
     {
-
-
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Console.WriteLine("Insert Data start");
+            //InsertData();
+            //Console.WriteLine("Insert Data complete");
+
+
+            using DataContext context = new DataContext();
+
+
+
+            var veggieSpecial = context.Products.Where(p => p.Name == "Vegie Special Pizza").FirstOrDefault();
+
+            if(veggieSpecial != null )
+            {
+                context.Remove(veggieSpecial);
+            }
+            context.SaveChanges();
+
+            var products = context.Products.Where(p => p.Price>1.00M).OrderBy(p => p.Name);
+            foreach(var p in products)
+            {
+                Console.WriteLine($"Id: {p.Id}");
+                Console.WriteLine($"Name: {p.Name}");
+                Console.WriteLine($"Price: {p.Price}");
+                Console.WriteLine(new string('-',20));
+            }
+
         }
+
+        static void InsertData()
+        {
+            using DataContext dataContext = new DataContext();
+
+            Product veggieSpecial = new Product()
+            {
+                Name = "Peperonni Special Pizza",
+                Price = 5.99m
+            };
+
+            dataContext.Add(veggieSpecial);
+
+            Product deluxMeat = new Product()
+            {
+                Name = "Delux chicken Pizza",
+                Price = 12.99m
+            };
+            dataContext.Add(deluxMeat);
+            dataContext.SaveChanges();
+        }
+
+
     }
 }

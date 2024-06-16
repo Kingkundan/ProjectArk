@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkUploadService", "ArkUploadService.csproj", "{8F062D26-3133-451B-9332-0B78E5E2F82D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkUploadService.Models", "..\ArkServices\ArkUploadService.Models\ArkUploadService.Models.csproj", "{B67931A5-877E-4CD3-8809-8FC68559B743}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F062D26-3133-451B-9332-0B78E5E2F82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F062D26-3133-451B-9332-0B78E5E2F82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F062D26-3133-451B-9332-0B78E5E2F82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F062D26-3133-451B-9332-0B78E5E2F82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B67931A5-877E-4CD3-8809-8FC68559B743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B67931A5-877E-4CD3-8809-8FC68559B743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B67931A5-877E-4CD3-8809-8FC68559B743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B67931A5-877E-4CD3-8809-8FC68559B743}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {375AA254-8E25-4379-9E19-28B26B41F836}
+	EndGlobalSection
+EndGlobal

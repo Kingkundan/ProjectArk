@@ -1,0 +1,12 @@
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\bin\Debug\net6.0\ArkSystem.Contracts.deps.json
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\bin\Debug\net6.0\ArkSystem.Contracts.dll
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\bin\Debug\net6.0\ArkSystem.Contracts.pdb
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.sourcelink.json
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.dll
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\refint\ArkSystem.Contracts.dll
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ArkSystem.Contracts.pdb
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkSystem.Contracts\obj\Debug\net6.0\ref\ArkSystem.Contracts.dll

@@ -1,0 +1,84 @@
+@echo off
+
+:: Root directory
+set ROOT_DIR=src
+
+:: Create root directory if it doesn't exist
+if not exist %ROOT_DIR% mkdir %ROOT_DIR%
+
+:: Create assets directories and files
+mkdir %ROOT_DIR%\assets
+mkdir %ROOT_DIR%\assets\images
+echo. > %ROOT_DIR%\assets\images\logo.png
+mkdir %ROOT_DIR%\assets\videos
+echo. > %ROOT_DIR%\assets\videos\intro.mp4
+mkdir %ROOT_DIR%\assets\styles
+echo. > %ROOT_DIR%\assets\styles\main.css
+echo. > %ROOT_DIR%\assets\styles\variables.css
+
+:: Create components directories and files
+mkdir %ROOT_DIR%\components
+mkdir %ROOT_DIR%\components\common
+echo. > %ROOT_DIR%\components\common\Button.jsx
+echo. > %ROOT_DIR%\components\common\Header.jsx
+echo. > %ROOT_DIR%\components\common\Footer.jsx
+
+mkdir %ROOT_DIR%\components\forms
+echo. > %ROOT_DIR%\components\forms\LoginForm.jsx
+echo. > %ROOT_DIR%\components\forms\RegistrationForm.jsx
+
+mkdir %ROOT_DIR%\components\layout
+echo. > %ROOT_DIR%\components\layout\Sidebar.jsx
+echo. > %ROOT_DIR%\components\layout\Navbar.jsx
+
+mkdir %ROOT_DIR%\components\auth
+echo. > %ROOT_DIR%\components\auth\Login.jsx
+echo. > %ROOT_DIR%\components\auth\Register.jsx
+echo. > %ROOT_DIR%\components\auth\PrivateRoute.jsx
+
+:: Create constants directory and files
+mkdir %ROOT_DIR%\constants
+echo. > %ROOT_DIR%\constants\actionTypes.js
+echo. > %ROOT_DIR%\constants\routes.js
+echo. > %ROOT_DIR%\constants\config.js
+
+:: Create pages directory and files
+mkdir %ROOT_DIR%\pages
+echo. > %ROOT_DIR%\pages\HomePage.jsx
+echo. > %ROOT_DIR%\pages\AboutPage.jsx
+echo. > %ROOT_DIR%\pages\ContactPage.jsx
+echo. > %ROOT_DIR%\pages\NotFoundPage.jsx
+echo. > %ROOT_DIR%\pages\DashboardPage.jsx
+
+:: Create redux directories and files
+mkdir %ROOT_DIR%\redux
+mkdir %ROOT_DIR%\redux\actions
+echo. > %ROOT_DIR%\redux\actions\authActions.js
+echo. > %ROOT_DIR%\redux\actions\userActions.js
+
+mkdir %ROOT_DIR%\redux\reducers
+echo. > %ROOT_DIR%\redux\reducers\authReducer.js
+echo. > %ROOT_DIR%\redux\reducers\userReducer.js
+echo. > %ROOT_DIR%\redux\reducers\index.js
+
+echo. > %ROOT_DIR%\redux\store.js
+echo. > %ROOT_DIR%\redux\types.js
+
+:: Create router directory and files
+mkdir %ROOT_DIR%\router
+echo. > %ROOT_DIR%\router\AppRouter.jsx
+
+:: Create utils directory and files
+mkdir %ROOT_DIR%\utils
+echo. > %ROOT_DIR%\utils\api.js
+echo. > %ROOT_DIR%\utils\auth.js
+echo. > %ROOT_DIR%\utils\formatDate.js
+echo. > %ROOT_DIR%\utils\validators.js
+
+:: Create main application files
+echo. > %ROOT_DIR%\App.jsx
+echo. > %ROOT_DIR%\index.js
+echo. > %ROOT_DIR%\serviceWorker.js
+
+echo Folder structure with files created successfully.
+pause

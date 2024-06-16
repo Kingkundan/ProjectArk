@@ -6,3 +6,10 @@ c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSyste
 c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.csproj.CoreCompileInputs.cache
 c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.exe
 c:\Users\ADMIN\Documents\Programming\Projects\Project Ark v1\ProjectArk\ArkSystem\ArkServices\obj\Debug\ArkServices.pdb
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\bin\Debug\ArkServices.exe.config
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\bin\Debug\ArkServices.exe
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\bin\Debug\ArkServices.pdb
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\obj\Debug\ArkServices.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\obj\Debug\ArkServices.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\obj\Debug\ArkServices.exe
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\ArkServices\obj\Debug\ArkServices.pdb

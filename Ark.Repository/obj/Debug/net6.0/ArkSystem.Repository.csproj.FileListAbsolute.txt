@@ -1,0 +1,12 @@
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\bin\Debug\net6.0\ArkSystem.Repository.deps.json
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\bin\Debug\net6.0\ArkSystem.Repository.dll
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\bin\Debug\net6.0\ArkSystem.Repository.pdb
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.sourcelink.json
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.dll
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\refint\ArkSystem.Repository.dll
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ArkSystem.Repository.pdb
+C:\Users\ADMIN\Documents\Programming\Projects\ProjectArk\Ark.Repository\obj\Debug\net6.0\ref\ArkSystem.Repository.dll

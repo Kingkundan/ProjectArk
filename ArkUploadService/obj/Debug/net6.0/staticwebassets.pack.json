@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\7 days login page concept.png",
+      "PackagePath": "staticwebassets\\Upload\\7 days login page concept.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\Agora Login_png by Saradh.png",
+      "PackagePath": "staticwebassets\\Upload\\Agora Login_png by Saradh.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\Hire Ground _ Sign In.png",
+      "PackagePath": "staticwebassets\\Upload\\Hire Ground _ Sign In.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\Login page.jfif",
+      "PackagePath": "staticwebassets\\Upload\\Login page.jfif"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\Niagahoster Login Page.png",
+      "PackagePath": "staticwebassets\\Upload\\Niagahoster Login Page.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\Trace Login Page.jfif",
+      "PackagePath": "staticwebassets\\Upload\\Trace Login Page.jfif"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Documents\\Programming\\Projects\\ProjectArk\\ArkUploadService\\wwwroot\\Upload\\Zihad Islam.png",
+      "PackagePath": "staticwebassets\\Upload\\Zihad Islam.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ArkUploadService.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ArkUploadService.props",
+      "PackagePath": "build\\ArkUploadService.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ArkUploadService.props",
+      "PackagePath": "buildMultiTargeting\\ArkUploadService.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ArkUploadService.props",
+      "PackagePath": "buildTransitive\\ArkUploadService.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

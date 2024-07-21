@@ -5,16 +5,6 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArkSystem", "ArkSystem.csproj", "{C3606F0F-33B8-4E12-B95A-A763BD227B35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkServices", "..\ArkServices\ArkServices.csproj", "{9288A47C-A01D-4F03-8F7D-F0A96DE17F1A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArkSystem.Models", "..\Models\ArkSystem.Models.csproj", "{5A95DE02-AFB2-430E-9C16-07342808845B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkSystem.AuthServices", "..\AuthServices\ArkSystem.AuthServices.csproj", "{FB03C9F0-44FE-4453-A29D-9D08FE63EA9F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkSystem.Repository", "..\Ark.Repository\ArkSystem.Repository.csproj", "{B8289D49-7311-417E-AEB3-7F19489CEF2E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkSystem.Contracts", "..\ArkSystem.Contracts\ArkSystem.Contracts.csproj", "{1DB70AD3-FDDC-4A90-91B5-46326D0CB0A1}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,26 +15,6 @@ Global
 		{C3606F0F-33B8-4E12-B95A-A763BD227B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3606F0F-33B8-4E12-B95A-A763BD227B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3606F0F-33B8-4E12-B95A-A763BD227B35}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9288A47C-A01D-4F03-8F7D-F0A96DE17F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9288A47C-A01D-4F03-8F7D-F0A96DE17F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9288A47C-A01D-4F03-8F7D-F0A96DE17F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9288A47C-A01D-4F03-8F7D-F0A96DE17F1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A95DE02-AFB2-430E-9C16-07342808845B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A95DE02-AFB2-430E-9C16-07342808845B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A95DE02-AFB2-430E-9C16-07342808845B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A95DE02-AFB2-430E-9C16-07342808845B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FB03C9F0-44FE-4453-A29D-9D08FE63EA9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB03C9F0-44FE-4453-A29D-9D08FE63EA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB03C9F0-44FE-4453-A29D-9D08FE63EA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB03C9F0-44FE-4453-A29D-9D08FE63EA9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B8289D49-7311-417E-AEB3-7F19489CEF2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8289D49-7311-417E-AEB3-7F19489CEF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8289D49-7311-417E-AEB3-7F19489CEF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8289D49-7311-417E-AEB3-7F19489CEF2E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DB70AD3-FDDC-4A90-91B5-46326D0CB0A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DB70AD3-FDDC-4A90-91B5-46326D0CB0A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DB70AD3-FDDC-4A90-91B5-46326D0CB0A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DB70AD3-FDDC-4A90-91B5-46326D0CB0A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

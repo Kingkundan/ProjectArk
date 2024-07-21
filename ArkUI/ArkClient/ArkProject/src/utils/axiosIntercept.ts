@@ -1,6 +1,6 @@
 import axios from "axios";
 import { store } from "../redux/store";
-import { logout, setIsAuthenticated } from "../redux/reducers/authSlice";
+import { logOut, setIsAuthenticated } from "../redux/reducers/authSlice";
 import { jwtDecode } from "jwt-decode";
 
 
@@ -16,7 +16,7 @@ export const RefreshToken = async (token: string | null) => {
         token = localStorage.getItem('accessToken');
         store.dispatch(setIsAuthenticated(true));
     } catch (error) {
-        store.dispatch(logout());
+        store.dispatch(logOut());
         window.location.href = "/login";
     }
     return token;
@@ -37,7 +37,7 @@ api.interceptors.request.use(
 
         if (token) {
             if(DateNow-lastAccessTime>idleTimeout){
-                store.dispatch(logout());
+                store.dispatch(logOut());
                 localStorage.removeItem('LastAccess');
                 return config;
             }
@@ -70,7 +70,7 @@ api.interceptors.response.use(
     (response) => response,
     (error) => {
         if (error.response && error.response.status === 401) {
-            store.dispatch(logout());
+            store.dispatch(logOut());
             window.location.href = "/"; // Redirect to login page
         }
         return Promise.reject(error);

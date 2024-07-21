@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import { loginApi, registerApi } from "../../utils/auth";
+import { logOutApi, loginApi, registerApi } from "../../utils/auth";
 
 export interface AuthState {
   user: any;
@@ -18,15 +18,30 @@ const initialState: AuthState = {
   error: null,
 };
 
-
+export const logOut = createAsyncThunk(
+  'auth/logOut',
+  async () => {
+    localStorage.removeItem('accessToken');
+    localStorage.removeItem('LastAccess');
+    const response = await logOutApi();
+    return response.data;
+  }
+);
 
 export const login = createAsyncThunk(
   'auth/login',
   async (credentials: { username: string; password: string }) => {
-    const response = await loginApi(credentials);
-    localStorage.setItem('accessToken', response.data);
-    localStorage.setItem("LastAccess", Date.now().toString());
-    return response.data;
+    try{
+
+      const response = await loginApi(credentials);
+      localStorage.setItem('accessToken', response.data);
+      localStorage.setItem("LastAccess", Date.now().toString());
+      return response.data;
+    }
+    catch(error:any){
+      console.log(error.response?.data);
+      throw error;
+    }
   }
 );
 
@@ -43,17 +58,16 @@ const authSlice = createSlice({
   name: 'auth',
   initialState,
   reducers: {
-    setIsAuthenticated(state,action){
+    setIsAuthenticated(state, action) {
       state.isAuthenticated = action.payload;
     },
-    logout(state) {
-      state.user = null;
-      state.accessToken = null;
-      state.isAuthenticated = false; 
-      localStorage.removeItem('accessToken');
-      localStorage.removeItem('refreshToken');
-      localStorage.removeItem('LastAccess');
-    },
+    // logout(state) {
+    //   state.user = null;
+    //   state.accessToken = null;
+    //   state.isAuthenticated = false; 
+    //   localStorage.removeItem('accessToken');
+    //   localStorage.removeItem('LastAccess');
+    // },
   },
   extraReducers: (builder) => {
     builder
@@ -70,6 +84,21 @@ const authSlice = createSlice({
       .addCase(login.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message || 'Login failed';
+      })
+      .addCase(logOut.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(logOut.fulfilled, (state, action: PayloadAction<any>) => {
+        state.user = null;
+        state.accessToken = null;
+        state.isAuthenticated = false;
+      })
+      .addCase(logOut.rejected, (state, action) => {
+        state.loading = false;
+        state.user = null;
+        state.accessToken = null;
+        state.isAuthenticated = false;
       })
       .addCase(register.pending, (state) => {
         state.loading = true;
@@ -88,7 +117,7 @@ const authSlice = createSlice({
   },
 });
 
-export const { logout,setIsAuthenticated } = authSlice.actions;
+export const { setIsAuthenticated } = authSlice.actions;
 
 export const selectAuth = (state: RootState) => state.auth;
 export default authSlice.reducer;

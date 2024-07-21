@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  arkadmin:
+    image: ${DOCKER_REGISTRY-}arkadmin
+    build:
+      context: .
+      dockerfile: ArkAdmin/Dockerfile
+
+  arkuploadservice:
+    image: ${DOCKER_REGISTRY-}arkuploadservice
+    build:
+      context: .
+      dockerfile: ArkUploadService/Dockerfile
+

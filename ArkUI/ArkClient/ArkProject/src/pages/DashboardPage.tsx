@@ -1,7 +1,12 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import Loader from '../components/common/Loader';
 import Sidebar from "../components/layout/Sidebar";
 import FinancesChart from "../components/charts/FinanceChart";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDatabase, faDollarSign, faHeartPulse, faMoneyBillTransfer, faMoneyBillWaveAlt, faMoneyCheck, faPiggyBank, faPlus, faSignOut, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import ChartBlock1 from "../components/charts/ChartBlock1";
+import DataTable from "../components/common/Datable";
+import Card from "../components/common/Card";
 
 const DashboardPage = () => {
     const [IsLoading, setIsLoading] = useState(true);
@@ -18,106 +23,103 @@ const DashboardPage = () => {
     else {
         return (<div className="flex">
             <Sidebar />
-            <div className="flex-col flex-grow ml-16 p-6 bg-gray-50">
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div className="flex-col flex-grow p-6 ml-16 bg-gray-50">
+                <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
                     <div className="lg:col-span-3">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                            <div className="bg-blue-600 text-white p-4 rounded-lg shadow">
-                                <h2 className="text-lg font-semibold">Balance</h2>
-                                <p className="text-2xl mt-2">$2190.19</p>
+                        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                            <div className="flex gap-2 p-4 bg-white shadow-xl rounded-2xl shadow-blue-200/10">
+                                <div className="flex flex-col w-2/3 gap-2">
+                                    <div className="flex align-middle">
+                                        <FontAwesomeIcon icon={faDollarSign} color="#49cc90" className="p-1 text-xl" />
+                                        <h2 className="pl-2 text-base font-semibold text-slate-500">Total Balance</h2>
+                                    </div>
+                                    <div className="flex my-3 ml-4">
+                                        <p className="pl-4 text-xl font-bold text-slate-500">$2190.19</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col w-1/3 gap-2 pb-10">
+                                    <ChartBlock1 strokeColor="#49cc90" />
+                                </div>
                             </div>
-                            <div className="bg-white p-4 rounded-lg shadow">
-                                <h2 className="text-lg font-semibold">Income</h2>
-                                <p className="text-2xl mt-2">$21.30</p>
+                            <div className="flex gap-2 p-4 bg-white shadow-xl rounded-2xl shadow-blue-200/10">
+                                <div className="flex flex-col w-2/3 gap-2">
+                                    <div className="flex align-middle">
+                                        <FontAwesomeIcon icon={faDollarSign} color="#49cc90" className="p-1 text-xl" />
+                                        <h2 className="pl-2 text-base font-semibold text-slate-500">Total Balance</h2>
+                                    </div>
+                                    <div className="flex my-3 ml-4">
+                                        <p className="pl-4 text-xl font-bold text-slate-500">$2190.19</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col w-1/3 gap-2 pb-10">
+                                    <ChartBlock1 strokeColor="#49cc90" />
+                                </div>
                             </div>
-                            <div className="bg-white p-4 rounded-lg shadow">
-                                <h2 className="text-lg font-semibold">Savings</h2>
-                                <p className="text-2xl mt-2">$1875.10</p>
+                            <div className="flex gap-2 p-4 bg-white shadow-xl rounded-2xl shadow-blue-200/10">
+                                <div className="flex flex-col w-2/3 gap-2">
+                                    <div className="flex align-middle">
+                                        <FontAwesomeIcon icon={faDatabase} color="#61affe" className="p-1 text-xl" />
+                                        <h2 className="pl-2 text-base font-semibold text-slate-500">Total Income</h2>
+                                    </div>
+                                    <div className="flex my-3 ml-4">
+                                        <p className="pl-4 text-xl font-bold text-slate-500">$21.30</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col w-1/3 gap-2 pb-10">
+                                    <ChartBlock1 strokeColor="#61affe" />
+                                </div>
                             </div>
-                            <div className="bg-white p-4 rounded-lg shadow">
-                                <h2 className="text-lg font-semibold">Expenses</h2>
-                                <p className="text-2xl mt-2">$19.112</p>
+                            <div className="flex gap-2 p-4 bg-white shadow-xl rounded-2xl shadow-blue-200/10">
+                                <div className="flex flex-col w-2/3 gap-2">
+                                    <div className="flex align-middle">
+                                        <FontAwesomeIcon icon={faHeartPulse} color="#ffaf61" className="p-1 text-xl" />
+                                        <h2 className="pl-2 text-base font-semibold text-slate-500">Total Savings</h2>
+                                    </div>
+                                    <div className="flex my-3 ml-4">
+                                        <p className="pl-4 text-xl font-bold text-slate-500">$1875.10</p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col w-1/3 gap-2 pb-10">
+                                    <ChartBlock1 strokeColor="#ffaf61" />
+                                </div>
                             </div>
                         </div>
-                        <div className="mt-6 bg-white p-4 rounded-lg shadow">
-                            <h2 className="text-lg font-semibold mb-4">Finances</h2>
+                        <div className="py-6 mt-6 bg-white rounded-lg shadow-xl shadow-blue-200/10">
+                            <h2 className="mb-4 ml-8 text-lg font-semibold text-slate-500">Finances</h2>
                             <FinancesChart />
                         </div>
                     </div>
                     <div className="lg:col-span-1">
-                        <div className="bg-white p-4 rounded-lg shadow mb-6">
-                            <h2 className="text-lg font-semibold">My Cards</h2>
+                        <div className="p-4 mb-6 bg-white rounded-lg shadow-xl shadow-blue-200/10">
+                            <div className="flex justify-between w-full">
+                                <h2 className="text-lg font-semibold text-slate-500">My Cards</h2>
+                                <button className="p-1 px-2 justify-center items-center rounded-[50%]  text-sm text-white shadow-blue-200/10 hover:bg-[rgba(0,118,255,0.9)] bg-[#91bbec]">
+                                    <span><FontAwesomeIcon icon={faPlus} className="w-3" /></span>
+                                </button>
+                            </div>
                             <div className="mt-4">
-                                <div className="bg-blue-600 text-white p-4 rounded-lg flex items-center justify-between">
-                                    <div>
-                                        <p className="text-lg">Visa</p>
-                                        <p className="text-2xl mt-2">$2190.19</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-sm">USD / US Dollar</p>
-                                        <p className="text-sm">Active</p>
-                                    </div>
-                                </div>
-                                <button className="mt-4 w-full py-2 bg-blue-600 text-white rounded-lg">Add New Card</button>
+                                <Card />                                
                             </div>
                         </div>
-                        <div className="bg-white p-4 rounded-lg shadow">
-                            <h2 className="text-lg font-semibold">Quick Transfer</h2>
+                        <div className="p-4 bg-white rounded-lg shadow-xl shadow-blue-200/10">
+                            <h2 className="text-lg font-semibold text-slate-500">Quick Transfer</h2>
                             <div className="mt-4">
                                 <input
                                     type="text"
                                     className="w-full p-2 border border-gray-300 rounded-lg"
                                     placeholder="Card Number"
                                 />
-                                <button className="mt-4 w-full py-2 bg-blue-600 text-white rounded-lg">Send Money</button>
-                                <button className="mt-2 w-full py-2 border border-gray-300 text-gray-600 rounded-lg">
+                                <button className="w-full py-2 mt-4 text-white bg-blue-600 rounded-lg">Send Money</button>
+                                <button className="w-full py-2 mt-2 text-gray-600 border border-gray-300 rounded-lg">
                                     Save as Draft
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="mt-6 bg-white p-4 rounded-lg shadow">
-                    <h2 className="text-lg font-semibold mb-4">Transactions</h2>
+                <div className="mt-6 bg-white rounded-lg shadow-xl shadow-blue-200/10">
                     <div className="overflow-x-auto">
-                        <table className="min-w-full bg-white">
-                            <thead>
-                                <tr>
-                                    <th className="py-2 px-4 border-b">Name</th>
-                                    <th className="py-2 px-4 border-b">Service</th>
-                                    <th className="py-2 px-4 border-b">Date</th>
-                                    <th className="py-2 px-4 border-b">Time</th>
-                                    <th className="py-2 px-4 border-b">Amount</th>
-                                    <th className="py-2 px-4 border-b">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td className="py-2 px-4 border-b">Cameron Williamson</td>
-                                    <td className="py-2 px-4 border-b">Figma</td>
-                                    <td className="py-2 px-4 border-b">12/02/22</td>
-                                    <td className="py-2 px-4 border-b">10:37 AM</td>
-                                    <td className="py-2 px-4 border-b">$17.12</td>
-                                    <td className="py-2 px-4 border-b text-red-500">Pending</td>
-                                </tr>
-                                <tr>
-                                    <td className="py-2 px-4 border-b">Courtney Henry</td>
-                                    <td className="py-2 px-4 border-b">Netflix</td>
-                                    <td className="py-2 px-4 border-b">11/02/22</td>
-                                    <td className="py-2 px-4 border-b">12:22 PM</td>
-                                    <td className="py-2 px-4 border-b">$10.21</td>
-                                    <td className="py-2 px-4 border-b text-green-500">Completed</td>
-                                </tr>
-                                <tr>
-                                    <td className="py-2 px-4 border-b">Eleanor Pena</td>
-                                    <td className="py-2 px-4 border-b">Spotify</td>
-                                    <td className="py-2 px-4 border-b">10/02/22</td>
-                                    <td className="py-2 px-4 border-b">11:31 AM</td>
-                                    <td className="py-2 px-4 border-b">$12.18</td>
-                                    <td className="py-2 px-4 border-b text-green-500">Completed</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <DataTable />
                     </div>
                 </div>
             </div>

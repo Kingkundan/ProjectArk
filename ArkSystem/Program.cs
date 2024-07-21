@@ -1,14 +1,11 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using ArkSystem.AuthServices;
-using System.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Serilog;
 using Swashbuckle.AspNetCore.Filters;
-using Microsoft.Extensions.Configuration;
+using System.Text;
 
 namespace ArkSystem
 {
@@ -17,6 +14,14 @@ namespace ArkSystem
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            Log.Logger = new LoggerConfiguration()
+                        .ReadFrom.Configuration(builder.Configuration)
+                        .Enrich.FromLogContext()
+                        .WriteTo.Console()
+                        .CreateLogger();
+
+            builder.Host.UseSerilog();
 
             // Add services to the container.
 
@@ -47,7 +52,7 @@ namespace ArkSystem
                            .AllowCredentials(); // Allow credentials (cookies, authorization headers, TLS client certificates)
                 });
             });
-            builder.Services.AddScoped<User>();  
+            builder.Services.AddScoped<User>();
             builder.Services.AddScoped<SessionService>();
             builder.Services.AddDbContext<ArkDbContext>(options =>
            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("ArkSystem")));
@@ -91,6 +96,10 @@ namespace ArkSystem
             }
 
             app.UseHttpsRedirection();
+
+
+            //app.UseSerilogRequestLogging();
+
             app.UseRouting();
 
             // Use CORS before other middlewares

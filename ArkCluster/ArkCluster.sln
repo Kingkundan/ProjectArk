@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkAdmin", "ArkAdmin\ArkAdmin.csproj", "{70260FF6-D3BC-419C-97B9-982700460131}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{7BD799EB-7840-4CC3-8231-A720C164BFE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkUploadService", "ArkUploadService\ArkUploadService.csproj", "{CCF29922-C22E-43F0-A43D-DCDC4CE0ED03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70260FF6-D3BC-419C-97B9-982700460131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70260FF6-D3BC-419C-97B9-982700460131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70260FF6-D3BC-419C-97B9-982700460131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70260FF6-D3BC-419C-97B9-982700460131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BD799EB-7840-4CC3-8231-A720C164BFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BD799EB-7840-4CC3-8231-A720C164BFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BD799EB-7840-4CC3-8231-A720C164BFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BD799EB-7840-4CC3-8231-A720C164BFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF29922-C22E-43F0-A43D-DCDC4CE0ED03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF29922-C22E-43F0-A43D-DCDC4CE0ED03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF29922-C22E-43F0-A43D-DCDC4CE0ED03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF29922-C22E-43F0-A43D-DCDC4CE0ED03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6BE617A-692B-4ADE-B9B3-7A7EFAE0B384}
+	EndGlobalSection
+EndGlobal

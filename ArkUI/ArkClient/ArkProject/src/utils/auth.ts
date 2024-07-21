@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
-import { logout } from "../redux/reducers/authSlice";
+import { logOut } from "../redux/reducers/authSlice";
+import { AppDispatch } from "../redux/store";
 
 const isTokenExpired = (token: string): boolean => {
   const decodedToken: any = jwtDecode(token);
@@ -16,17 +17,17 @@ const getTokenExpiration = (token: string): number => {
 };
 
 const useTokenExpiration = (token: string | null) => {
-  const dispatch = useDispatch();
+  const dispatch: AppDispatch = useDispatch();
 
   useEffect(() => {
     if (!token) return;
 
     if (isTokenExpired(token)) {
-      dispatch(logout());
+      dispatch(logOut());
     } else {
       const expirationTime = getTokenExpiration(token);
       const timeoutId = setTimeout(() => {
-        dispatch(logout());
+        dispatch(logOut());
       }, expirationTime - Date.now());
 
       return () => clearTimeout(timeoutId);
@@ -43,6 +44,10 @@ export const loginApi = async (credentials: {
   password: string;
 }) => {
   return await axios.post(`${API_URL}auth/login`, credentials,{withCredentials:true});
+};
+
+export const logOutApi = async () => {
+  return await axios.post(`${API_URL}auth/logout`,{},{withCredentials:true});
 };
 
 export const registerApi = async (data: {

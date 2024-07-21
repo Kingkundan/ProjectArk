@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pfzmC/6BI3fklnd51D8Auuk6p9TfqZkQPfoUjjbBgGc=",
+  "Source": "ArkUploadService",
+  "BasePath": "_content/ArkUploadService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ArkSystem")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95e72dac5c3d52c85955b368335e91c483250b0a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+393138ab86dbf6a6095602af2eca4301de4f0843")]
 [assembly: System.Reflection.AssemblyProductAttribute("ArkSystem")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ArkSystem")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

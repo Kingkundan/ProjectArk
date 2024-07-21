@@ -1,0 +1,8 @@
+2024-06-22 15:36:25.026 +05:30 [WRN] Process is taking more time than expected
+2024-06-22 15:36:28.990 +05:30 [WRN] Process is taking more time than expected
+2024-06-22 15:36:32.996 +05:30 [WRN] Process is taking more time than expected
+2024-06-22 15:36:36.985 +05:30 [WRN] Process is taking more time than expected
+2024-06-22 15:36:40.996 +05:30 [WRN] Process is taking more time than expected
+{"Timestamp":"2024-06-22T15:39:02.4802183+05:30","Level":"Warning","MessageTemplate":"Process is taking more time than expected","Properties":{"SourceContext":"WorkerService.ProcessOrder"}}
+{"Timestamp":"2024-06-22T15:39:06.4437534+05:30","Level":"Warning","MessageTemplate":"Process is taking more time than expected","Properties":{"SourceContext":"WorkerService.ProcessOrder"}}
+{"Timestamp":"2024-06-22T15:39:07.9693525+05:30","Level":"Warning","MessageTemplate":"Coravel's Scheduling service is attempting to close but there are tasks still running. App closing (in background) will be prevented until all tasks are completed.","Properties":{"SourceContext":"Coravel.Scheduling.HostedService.SchedulerHost"}}
